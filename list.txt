@@ -1,0 +1,2368 @@
+####################################################################################### PRINTA VALORES DAS VARIAVEIS NA TELA
+
+
+<html>
+	<head>
+		<title>Meu primeiro programa javascript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			<!--
+			var inteiro, texto, booleano;
+			
+			inteiro = 10;
+			texto = "juliano"
+			booleano = false;
+			
+			document.write(inteiro + texto + booleano);
+			
+			-->
+		</script>
+	</body>
+</html>
+
+################################################################# FAZ OPERAÇÕES COM VARIAVEIS E PRINTA NA TELA O RESULTADO
+
+<html>
+	<head>
+		<title>Meu primeiro programa javascript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			<!--
+			var variavel1, variavel2, temp;
+			
+			variavel1 = 15;
+			variavel2 = 8;
+			
+			document.write(variavel1 + " " + variavel2);
+			
+			temp = variavel1 + variavel2;
+			document.write("<br>" + variavel1 + " + " + variavel2 + " = " + temp);
+			
+			temp = variavel1 - variavel2;
+			document.write("<br>" + variavel1 + " - " + variavel2 + " = " + temp);
+			
+			temp = variavel1 * variavel2;
+			document.write("<br>" + variavel1 + " * " + variavel2 + " = " + temp);
+			
+			temp = variavel1 / variavel2;
+			document.write("<br>" + variavel1 + " / " + variavel2 + " = " + temp);
+
+			temp = variavel1 % variavel2;
+			document.write("<br>" + variavel1 + " % " + variavel2 + " = " + temp);
+
+			document.write("<br>");
+			document.write(temp++);
+			document.write("<br>");
+			document.write(++temp);
+			
+			-->
+		</script>
+	</body>
+</html>
+
+
+################################################################### RECEBE OS VALORES COMO ENTRADA E PRINTA NA TELA
+
+<html>
+	<head>
+		<title>Meu primeiro programa javascript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			<!--
+				var nome, idade;
+				
+				nome = prompt("Informe o seu nome");
+				
+				if (nome == "")
+				{
+					document.write("nome nao informado");
+				}
+				else
+				{
+					idade = prompt("Informe a sua idade","25");
+					
+					document.write("nome=" + nome + "<br> idade=" + idade); 
+				}
+				
+			
+			-->
+		</script>
+	</body>
+</html>
+
+
+####################################################### PRINTA ALGUMAS INFORMAÇÕES NA TELA E FAZ OPERAÇÃO COM VARIÁVEIS
+
+
+<html>
+	<head>
+		<title>Meu primeiro programa javascript</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			<!--
+			var nome, idade;
+			
+			nome = 10;
+			idade = 30;
+			
+			
+			document.write("Ola <br> <b> mundo....!!!!</b>");
+			document.write("funciona....");
+			document.write("<br>");
+			document.write(nome + idade);
+			
+			/*comentario*/
+			
+			-->
+		</script>
+	</body>
+</html>
+
+#############################################################################  EXIBE UM FORMULÁRIO E LIMPA OS DADOS INSERIDOS
+
+
+
+<html>
+	<head>
+	    <meta charset = "UTF-8">
+		<title>
+			Atividade 12
+		</title>
+	</head>
+	<body>
+		<p>Formulario de cadastro de cliente</p>
+		<form method="GET"  action="http://www.jmenzen.com.br/teste.aspx">
+			<table>
+				<tr>
+					<td>Nome:</td>
+					<td> <input size="40" maxlength="5" type="text" value="teste" name="nome"> </td>
+				</tr>
+				<tr>
+					<td>Casa própria:</td>
+					<td>
+						<input type="checkbox" name="casapropria" value="s">
+					</td>
+				</tr>
+				<tr>
+					<td>Sexo:</td>
+					<td>Femino<input type="radio" name="sexo" value="f"> 
+					    Masculino<input type="radio" name="sexo" value="m"> </td>
+				</tr>
+				<tr>
+					<td>Estado civil:</td>
+					<td>
+						<select name="estadocivil">
+							<option value="s">Solteiro(a)</option>
+							<option value="c">Casado(a)</option>
+							<option value="d">Divorciado(a)</option>
+							<option value="v">Viuvo(a)</option>
+							<option value="o">Outro(a)</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Comentário</td>
+					<td>
+						<textarea rows="10" cols="10" name="comentario">
+						</textarea>
+					</td>
+				</tr>
+			</table>
+			
+			<input type="hidden" name="email" value="juliano.menzen@gmail.com">
+			
+			<input type="submit" value="Cadastrar">
+			<input type="reset" value="Limpar Formulário">
+		</form>
+		
+	</body>
+</html>
+
+
+################################################################ RECEBE VALORES DE ENTRADA PRINTA E CONVERTE STRING PARA NUMERAL
+
+
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var nome, idade;
+			
+			/*
+				Comentario de script
+			*/
+			
+			nome = prompt("Informe o seu nome");
+			idade = prompt("Informe a sua idade");
+			
+			idade = Number(idade); //converte a string para tipo numerico
+			
+		
+			document.write("Ola <br> <b>mundo</b>!!!!");
+			document.write("<br>Seja bem vindo " + nome + " tenho " + (idade + idade) + " anos" );
+		</script>
+	</body>
+</html>
+
+
+################################################################# RECEBE VALORES DE ENTRADA E COMPARA SE HÁ VALORES IGUAIS
+
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var valor1, valor2, valor3;
+			
+			valor1 = prompt("Informe o valor 1");
+			valor2 = prompt("Informe o valor 2");
+			valor3 = prompt("Informe o valor 3");
+			
+			//Converter os valores lidos para o tipo numerico
+			//Necessario pois todo o valor lido do navegador é interpretado como texto
+			valor1 = Number(valor1);
+			valor2 = Number(valor2);
+			valor3 = Number(valor3);
+			
+			if (valor1 == valor2 && valor2 == valor3)
+			{
+				//todos os valores sao iguais
+				document.write("Os tres valores sao iguais");
+			}
+			else {
+				if (valor1 == valor2 || valor1 == valor3 || valor2 == valor3)
+				{
+					//apenas dois valores sao iguais
+					alert("Dois valores sao iguais");
+				}
+				else
+				{
+					//nenhum valor eh igual
+					alert("Nenhum valor eh igual");
+				}
+			}
+			
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
+
+
+################################################################# COMPARA UM VALOR DE ENTRADA SE O MESMO É MULTIPLO DE 5
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var valor1;
+			
+			valor1 = prompt("Informe o valor 1");
+			
+			//Converter os valores lidos para o tipo numerico
+			//Necessario pois todo o valor lido do navegador é interpretado como texto
+			valor1 = Number(valor1);
+			
+			if ((valor1 % 5) == 0)
+			{
+				//multiplo de 5
+				document.write("O numero " + valor1 + " eh multiplo de 5");
+			}
+			else
+			{
+				//nao eh multiplo de 5
+				document.write("O numero " + valor1 + " nao eh multiplo de 5");
+			}
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
+
+
+############################################################# COMPARA SE O VALOR DE ENTRADA É MAIOR OU MENOR QUE ZERO
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var valor1;
+			
+			valor1 = prompt("Informe o valor 1");
+			
+			//Converter os valores lidos para o tipo numerico
+			//Necessario pois todo o valor lido do navegador é interpretado como texto
+			valor1 = Number(valor1);
+			
+			if (valor1 == 0)
+			{
+				document.write("O valor eh zero");
+			}
+			else
+			{
+				if (valor1 > 0)
+				{
+					document.write("O valor informado eh maior que zero");
+				}
+				else
+				{
+					document.write("O valor informado eh menor que zero");
+				}
+			}
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
+
+################################################################### COMPARA SE O ANO DE ENTRADA É UM ANO BISEXTO
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var valor1;
+			
+			valor1 = prompt("Informe o valor 1");
+			
+			//Converter os valores lidos para o tipo numerico
+			//Necessario pois todo o valor lido do navegador é interpretado como texto
+			valor1 = Number(valor1);	
+			
+			if ((valor1 % 400) == 0){
+				document.write("O ano informado eh bisexto");
+			}
+			else
+			{
+				if((valor1 % 4) == 0 && (valor1 % 100) != 0)
+				{
+					document.write("O ano informado eh bisexto");
+				}
+				else
+				{
+					document.write("O ano informado nao eh bisexto");
+				}
+			}
+			
+				
+			
+		</script>
+	</body>
+</html>
+
+################################################################# LÊ SALARIO E IDADE E COMPARA SE RECEBE BENEFÍCIO
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			var salarioBase, idade, bonus;
+			
+			salarioBase = prompt("Informe o salario base");
+			idade = prompt("Informe a idade");
+			
+						
+			//Converter os valores lidos para o tipo numerico
+			//Necessario pois todo o valor lido do navegador é interpretado como texto
+			salarioBase = Number(salarioBase);	
+			idade = Number(idade);	
+			
+			if (salarioBase >= 1000 && idade > 50)
+			{
+				bonus = salarioBase * 0.1;
+			}
+			
+			if (salarioBase < 1000 && idade <= 50)
+			{
+				bonus = salarioBase * 0.05;
+			}
+			
+			document.write("<br>Salario Base: " + salarioBase);
+			document.write("<br>Idade: " + idade);
+			document.write("<br>Salario liquido: " + (salarioBase + bonus) );
+			
+		</script>
+	</body>
+</html>
+
+############################################################################## PRINTA NÚMEROS DE 100 A 200 DE 10 EM 10
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			/*Escreva um programa em javascript que 
+			imprima os números de 100 até 200 de 10 
+			em 10.*/
+			
+			for(i=100;i<= 200; i+=10)
+			{
+				document.write("<br>" + i);
+			}
+			
+			
+		</script>
+	</body>
+</html>
+
+#################################################### LÊ VALORES E COMPARA SE OS MESMOS ESTÃO DENTRO DE UM DETERMINADO INTERVALO
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			/*
+			Ler 10 valores e contar quantos estão 
+			no intervalo [10, 20] e quantos deles 
+			estão fora deste intervalo, escrevendo 
+			estas informações.
+			*/
+			var qtdDentroIntervalo, qtdForaIntervalo, valorLido;
+			
+			qtdDentroIntervalo = 0;
+			qtdForaIntervalo = 0;
+			for(i=0;i<10;i++)
+			{
+				valorLido = Number(prompt("Informe o valor " + i));
+				if (valorLido >= 10 && valorLido <= 20){
+					qtdDentroIntervalo++;
+				}
+				else{
+					qtdForaIntervalo++;
+				}
+			}
+			
+			document.write("Variaveis dentro do intervalo: " + qtdDentroIntervalo);
+			document.write("<br>Variaveis fora do intervalo: " + qtdForaIntervalo);
+			
+		</script>
+	</body>
+</html>
+
+
+############################################  MONTA TABELA CONFORME O NÚMERO DE LINHAS E COLUNAS INFORMADOS COMO ENTRADA
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			/* Faça um programa em javascript que 
+			utilizando repetição gere a seguinte 
+			saída:
+				1 1 1 1 1 1
+				2 2 2 2 2 2
+				3 3 3 3 3 3
+				4 4 4 4 4 4
+				5 5 5 5 5 5
+				6 6 6 6 6 6
+			*/
+			
+			var linhas, colunas, contador;
+			
+			linhas =  Number(prompt("Informe o numero de linhas"));
+			colunas = Number(prompt("Informe o numero de colunas"));
+			contador = 1;
+			
+			document.write("<table border='1'>");
+			for(i=1;i<=linhas;i++){
+				document.write("<tr>");
+				for(j=1;j<=colunas;j++){
+					document.write("<td>");
+					document.write(" " + contador);
+					contador++
+					document.write("</td>");
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+			
+			
+			
+		</script>
+	</body>
+</html>
+
+############################################ CALCULA EM QUANTO TEMPO A POPULAÇÃO DA CIDADE A PASSA EM NÚMERO A CIDADE B
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			/* Suponha que a população de uma cidade 
+				A seja da ordem de 100.000 habitantes 
+				com uma taxa anual de crescimento de 
+				3,1% ao ano, e que a população de 
+				uma cidade B de 210.000 habitantes 
+				com uma taxa anual de crescimento de 
+				1,5%. Escreva um programa em javascript  
+				que calcule e escreva quantos anos serão 
+				necessários para que a população da cidade A 
+				ultrapasse a da cidade B, mantidas as taxas 
+				anuais de crescimento.*/
+				
+				var populacaoA, populacaoB, anos;
+				
+				populacaoA = 100000;
+				populacaoB = 210000;
+				anos = 0;
+				
+				do{
+					populacaoA = populacaoA + (populacaoA * 0.031);
+					populacaoB = populacaoB + (populacaoB * 0.015);
+					anos = anos + 1;
+				}while(populacaoA < populacaoB);
+				
+				document.write("A populacao A passou da populacao B em " + anos + " anos");
+				
+				
+				
+				
+				
+		</script>
+	</body>
+</html>
+
+
+#################################################################################### VETORES E MATRIZES
+
+<html>
+	<head>
+		<script type="text/javascript">
+			//Define que a variavel é um vetor de tamanho nao definido
+			var vetor = new Array();
+			
+			//Atriuiu-se o valor 1 para a posicao zero do vetor
+			vetor[0] = 1;
+			vetor[1] = 10;
+			vetor[10] = 20;
+			
+			//Declarar uma matriz [2][2]
+			var matriz = new Array();
+			matriz[0] = new Array();
+			matriz[1] = new Array();
+			
+			//Atribuimos o valor 1 para a posicao 0 linha e 0 coluna
+			matriz[0][0] = 1;
+			//Atribuimos o valor 30 para a linha 1 e coluna 1
+			matriz[1][1] = 30;
+			
+			vetor.length; //retorna o tamanho do vetor
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
+
+############################################## JAVASCRIPT COM CSS, EVENTO FORMA UM QUADRADO VERMELHO AO CLICAR NO BOTÃO
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			function inicializa()
+			{
+			    //obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.position = "absolute";
+				objeto.style.width = "100px";
+				objeto.style.height = "100px";
+				objeto.style.top = "20px";
+				objeto.style.left = "20px";
+				objeto.style.backgroundColor = "red";
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="aqui" onclick="inicializa()">
+		<div style="background-color:blue;" id="quadrado"></div>
+	</body>
+</html>
+
+################################################################################## EVENTOS, FUNÇÕES
+
+<html>
+	<head>
+		<script>
+			function ExecutarCalculo(){
+				var salarioBase, idade, bonus;
+			
+				//salarioBase = prompt("Informe o salario base");
+				//idade = prompt("Informe a idade");
+				salarioBase = document.cadastro.salariobase.value;
+				idade = document.cadastro.idade.value;	
+				
+				//Converter os valores lidos para o tipo numerico
+				//Necessario pois todo o valor lido do navegador é interpretado como texto
+				salarioBase = Number(salarioBase);	
+				idade = Number(idade);	
+				
+				bonus = CalcularBonus(salarioBase,idade);
+				
+				//document.write("<br>Salario Base: " + salarioBase);
+				//document.write("<br>Idade: " + idade);
+				//document.write("<br>Salario liquido: " + (salarioBase + bonus) );
+				document.cadastro.salarioliquido.value = (salarioBase + bonus);
+			}
+			
+			function CalcularBonus(salario, idade){
+				var bonus;
+				
+				bonus = 0;
+				if (salario >= 1000 && idade > 50)
+				{
+					bonus = salario * 0.1;
+				}
+				
+				if (salario < 1000 && idade <= 50)
+				{
+					bonus = salario * 0.05;
+				}
+				
+				return bonus;
+			}
+		</script>
+	</head>
+	<body>
+		<form name="cadastro">
+			Salario Base:
+			<input type="text" name="salariobase">
+			<br>
+			Idade:
+			<input type="text" name="idade">
+			<br>
+			Salario Liquido:
+			<input type="text" name="salarioliquido">
+			<br>
+			
+			<input type="button" value="Clique aqui!!" onclick="ExecutarCalculo()">
+		</form>
+	
+
+	</body>
+</html>
+
+############################################################ PROGRAMA QUE PRINTA UM QUADRADO DE NÚMEROS CONFORME COMENTÁRIO
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script>
+			/*
+			3.	Faça um programa em javascript que utilizando repetição 
+			    gere a seguinte saída:
+				1 1 1 1 1 1
+				2 2 2 2 2 2
+				3 3 3 3 3 3
+				4 4 4 4 4 4
+				5 5 5 5 5 5
+				6 6 6 6 6 6
+			*/
+			
+			var colunas, linhas;
+			colunas = 6;
+			linhas = 6;
+			
+			for(i = 0; i < linhas; i++){
+				for(j = 0; j < colunas; j++){
+					document.write((i + 1) + " ");
+				}
+				document.write("<br>");
+			}
+			
+		</script>
+	</body>
+</html>
+
+############################################### FUNÇÃO QUE MOSTRA OS NÚMEROS DE 100 A 200 DE 10 EM 10 CHAMADA 2 VEZES
+
+<html>
+	<head>
+		<script>
+			function PrimeiraFuncao(){
+				var i;
+				for (i = 100; i<= 200; i = i + 10)
+				{
+					document.write(i + "<br>");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			PrimeiraFuncao();
+			
+			PrimeiraFuncao();
+		</script>
+	</body>
+</html>
+
+################################################################### FUNÇÃO QUE SOMA 2 VALORES PASSADOS COMO ARGUMENTOS
+
+<html>
+	<head>
+		<script>
+			function Somar(valor1, valor2){
+				var resultado;
+				resultado = valor1 + valor2;
+				return resultado;
+			}
+		</script>
+	</head>
+	<body>
+		<script>
+			var v1;
+			v1 = Somar(10,10);
+			document.write(v1);
+		</script>
+	</body>
+</html>
+
+######################################################################## FUNÇÃO QUE SOMA DOIS VALORES EM EVENTO DE BOTÃO
+
+<html>
+	<head>
+		<script>
+			function Somar(valor1, valor2){
+				var resultado;
+				resultado = valor1 + valor2;
+				alert(resultado);
+				return resultado;
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" onclick="Somar(2,2)" value="Clique Aqui!">
+	</body>
+</html>
+
+############################################################### FUNÇÕES QUE SOMAM E MOSTRAM VALORES NOS CAMPOS DE FORMULARIO
+
+<html>
+	<head>
+		<script>
+			function Somar(valor1, valor2){
+				var resultado;
+				resultado = valor1 + valor2;
+				return resultado;
+			}
+			
+			function Processar(){
+				var v1, v2, resultado;
+				
+				v1 = document.cadastro.val1.value;
+				v2 = document.cadastro.val2.value;
+				
+				v1 = Number(v1);
+				v2 = Number(v2);
+				
+				resultado = Somar(v1,v2);
+				
+				document.cadastro.res.value = resultado;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<form name="cadastro">
+			<input type="text" name="val1" value="2">
+			<br>
+			<input type="text" name="val2">
+			<br>
+			<input type="text" name="res">
+			<br>
+			<input type="button" onclick="Processar()" value="Clique Aqui!">
+		</form>
+	</body>
+</html>
+
+################################################################  LÊ VALORES E PRINTA NA TELA CONFORMA LÓGICA NO CÓDIGO
+
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var nome, idade;
+			
+			/*
+				Comentario de script
+			*/
+			
+			nome = prompt("Informe o seu nome");
+			idade = prompt("Informe a sua idade");
+			
+			idade = Number(idade); //converte a string para tipo numerico
+			
+		
+			document.write("Ola <br> <b>mundo</b>!!!!");
+			document.write("<br>Seja bem vindo " + nome + " tenho " + (idade + idade) + " anos" );
+		</script>
+	</body>
+</html>
+
+######################################################################## PRINTA TABELA LOGO ABAIXO DOS CAMPOS DE FORMULARIO
+
+<html>
+	<head>
+		<script>
+			function DesenharTabela(){
+				var linha, coluna, contador, tabela;
+				
+				linha = document.getElementById("linhas").value;
+				//document.cadastro.linhas.value;
+				coluna = document.getElementById("colunas").value;
+				//document.cadastro.colunas.value;
+				
+				linha = Number(linha);
+				coluna = Number(coluna);
+				
+				contador = 1;
+				tabela = "<table border='1'>";
+				for(i = 0; i < linha; i++){
+					tabela = tabela + "<tr>";
+					for(j = 0; j < coluna; j++){
+						tabela = tabela + "<td>";
+						tabela = tabela + contador;
+						contador++;
+						tabela = tabela + "</td>";
+					}
+					tabela = tabela + "</tr>";
+				}
+				tabela = tabela + "</table>";
+
+				document.getElementById("resultado").innerHTML = tabela;
+
+			}
+		</script>
+	</head>
+	<body>
+		Linhas: <input value="3" type="text" id="linhas" name="linhas">
+		<br>
+		Colunas: <input type="text" id="colunas" name="colunas">
+		<br>
+		<input type="button" value="Executar" onclick="DesenharTabela()">
+		<br>
+		<div id="resultado">
+		
+		</div>
+	</body>
+</html>
+
+######################################################################## CALCULADORA
+
+<html>
+	<head>
+		<script>
+			var op,vl1;
+			
+			function PreencherValor(valor){
+				var disp;
+				disp = document.getElementById("display");
+				disp.value = disp.value + valor;
+			}
+			
+			function RegistrarOperacao(operacao){
+				op = operacao;
+				vl1 = document.getElementById("display").value;
+				document.getElementById("display").value = "";
+			}
+			
+			function ExecutarOperacao(){
+				var vl2, resultado;
+				vl2 = document.getElementById("display").value;
+				//converter os valores para numeros
+				vl1 = Number(vl1);
+				vl2 = Number(vl2);
+				
+				resultado = "";
+				if (op == "+"){
+					resultado = vl1 + vl2;
+				}
+				else if(op == "-"){
+					resultado = vl1 - vl2;
+				}
+				else if(op == "*"){
+					resultado = vl1 * vl2;
+				}
+				else if(op == "/") {
+					resultado = vl1 / vl2;
+				}
+				document.getElementById("display").value = resultado;
+			}
+			
+			function Limpar(){
+				document.getElementById("display").value = "";
+				op="";
+				vl1=0;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td colspan="4">
+					<input type="text" id="display">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="PreencherValor(7)" value="7">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(8)" value="8">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(9)" value="9">
+				</td>
+				<td>
+					<input type="button" onclick="RegistrarOperacao('+')" value="+">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="PreencherValor(4)" value="4">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(5)" value="5">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(6)" value="6">
+				</td>
+				<td>
+					<input type="button" onclick="RegistrarOperacao('-')" value="-">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="PreencherValor(1)" value="1">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(2)" value="2">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(3)" value="3">
+				</td>
+				<td>
+					<input type="button" onclick="RegistrarOperacao('/')" value="/">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" onclick="Limpar()" value="C">
+				</td>
+				<td>
+					<input type="button" onclick="PreencherValor(0)" value="0">
+				</td>
+				<td>
+					<input type="button" onclick="ExecutarOperacao()" value="=">
+				</td>
+				<td>
+					<input type="button" onclick="RegistrarOperacao('*')" value="*">
+				</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
+
+
+############################################################################################ EXEMPLO MANIPULAÇÃO DOM
+
+<html>
+	<head>
+		<script>
+			function executar(){
+				var elemento = document.getElementById("campo");
+				var divi = document.getElementById("d1");
+				
+				divi.innerHTML += "<p>" + elemento.value + "</p>"
+			
+			}
+		</script>
+	</head>
+	<body>
+		<input id="campo" type="text">
+		<input type="button" onclick="executar()">
+		<div id="d1">
+		</div>
+	</body>
+</html>
+
+########################################################################################### MOSTRA QUADRADO SE MOVENDO NA TELA
+
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			//objeto que contem a funcao de controle de tempo
+			var armazenaContador;
+
+			function inicio()
+			{
+				//executa a funcao incrementacontador a cada 1000 milisegundos ou 1 segundo
+				armazenaContador=setInterval(incrementacontador,1000);
+			}
+
+			function fim()
+			{
+				//termina a execucao
+				clearInterval(armazenaContador);
+			}
+			
+			function incrementacontador()
+			{
+				//obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.left = Number(objeto.style.left.replace("px","")) + 10;
+			}
+			
+			function inicializa()
+			{
+			    //obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.position = "absolute";
+				objeto.style.width = "100px";
+				objeto.style.height = "100px";
+				objeto.style.top = "200px";
+				objeto.style.left = "10px";
+				objeto.style.backgroundColor = "red";
+			}
+		</script>
+	</head>
+	<body onload="inicializa()">
+		<form name="navegador">
+			<input type="button" onclick="inicio()" value="Iniciar" />
+			<input type="button" onclick="fim()" value="Terminar" />
+		</form>
+		<div id="quadrado"></div>
+	</body>
+</html>
+
+##################################################################### INSERE DIVS ALEATÓRIAS NA TELA, QUADRADOS VERMELHOS
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			//objeto que contem a funcao de controle de tempo
+			var armazenaContador;
+
+			function inicio()
+			{
+				//executa a funcao incrementacontador a cada 1000 milisegundos ou 1 segundo
+				armazenaContador = setInterval(desenhaDiv,500);
+			}
+
+			function desenhaDiv()
+			{
+				var linha, coluna;
+				var conteudo;
+				
+				linha = Math.random() * 1000;
+				coluna = Math.random() * 1000;
+				
+				//obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				conteudo = "<div style='position:absolute;width:50px;height:50px;top:" + linha + ";left:" + coluna + ";background-color:red;'></div>";
+				
+				objeto.innerHTML += conteudo;
+
+			}
+			
+			function inicializa()
+			{
+			    //obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.position = "absolute";
+				objeto.style.width = "1000px";
+				objeto.style.height = "10000px";
+				objeto.style.top = "0px";
+				objeto.style.left = "0px";
+				
+				inicio();
+			}
+		</script>
+	</head>
+	<body onload="inicializa()">
+		<div id="quadrado"></div>
+	</body>
+</html>
+
+################################ EXECUTA FUNÇÕES CONFORME EVENTOS, QUANDO PASSA O MOUSE POR CIMA DAS DIVS (ONMOUSEOVER)
+
+<html>
+	<head>
+		<script type="text/javascript">
+			var posicao;
+			
+			function Executa()
+			{
+				alert("oi");
+				posicao = 0;
+				
+				var obj = document.getElementById("div1");
+				
+				alert(obj.style.left);
+			}
+			
+			function Movimenta()
+			{
+				var obj = document.getElementById("div1");
+				
+				posicao = posicao + 200;
+				
+				obj.style.left = posicao;
+				
+				posicao = posicao * -1;
+				
+				alert(posicao);
+			}
+		
+		</script>
+	</head>
+	<body onload="Executa()">
+		<div  id="div1" style="position:absolute;width:200px;height:200px;background-color:red;" onmouseover="Movimenta()">
+		
+		</div>
+		
+		<div style="position:absolute;top:201px;width:200px;height:200px;background-color:blue;" onmouseout="Executa()">
+		
+		</div>
+	</body>
+</html>
+
+########################################################## EVENTO QUE SEGUE O MOUSE, QUADRADO VERMELHO JUNTO AO MOUSE
+
+<html>
+	<head>
+		<script language="javascript">
+			<!--
+			var IE;
+			var tempX;
+			var tempY;
+			
+			function getMouseXY(e) {
+			  if (IE) { 
+				tempX = event.clientX + document.body.scrollLeft
+				tempY = event.clientY + document.body.scrollTop
+			  } else {  
+				tempX = e.pageX
+				tempY = e.pageY
+			  }  
+			  // trata valores negativos para navegador antigo (netscape 4)
+			  if (tempX < 0){tempX = 0}
+			  if (tempY < 0){tempY = 0}  
+			  
+			  //mostra a posicao
+			  var divi = document.getElementById("quadrado");
+			  divi.style.top = tempY;
+			  divi.style.left = tempX;
+
+			  return true;
+			 }
+			
+			
+            function criaMovimento()
+			{			
+				// Verifica se for o IE
+				IE = document.all?true:false
+
+				// Se nao for IE necessario capturar os eventos do mouse
+				if (!IE) document.captureEvents(Event.MOUSEMOVE)
+
+				// Atribui ao evento move do mouse a rotina de captura do movimento
+				document.onmousemove = getMouseXY;
+
+				// Variaveis temporarias par capturar o movimento
+				var tempX = 0;
+				var tempY = 0;
+
+			  }
+			//-->
+		</script>
+	</head>
+	<body onload="criaMovimento()">
+		<div id="quadrado" style="position:absolute;width:100px;height:100px;background-color:red;"></div>
+	
+	</body>
+</html>	
+
+############################################# MOSTRA CONTADOR E DEVERIA INCREMENTAR CONFORME O VALOR PASSADO NO INPUT
+
+<html>
+	<head>
+		<script>
+			var vetorNumeros = new Array();
+			var tamanhoVetor=0;
+			var tempoSegundos=0;
+			
+			function IncrementaVetor(){
+				var conteudo;
+				conteudo = document.getElementById("campo").value;
+				document.getElementById("campo").value = "";
+				
+				conteudo = Number(conteudo);
+				
+				vetorNumeros[tamanhoVetor] = conteudo;
+				tamanhoVetor++;
+			}
+			
+			function Ordenar(){
+				var i,j,temp;
+				//Esta funcao fara a ordenacao do vetor
+				var res = document.getElementById("resultado");
+				
+				//res.innerHTML = vetorNumeros.sort(); - Ordenacao pelo javascript
+				
+				for (i=0;i<tamanhoVetor;i++){
+					for(j=0;j<tamanhoVetor;j++){
+						if (vetorNumeros[i] > vetorNumeros[j]){
+							temp = vetorNumeros[i] ;
+							vetorNumeros[i] = vetorNumeros[j];
+							vetorNumeros[j] = temp; 
+						}
+					}
+				}
+				res.innerHTML = vetorNumeros;
+			}
+			
+			function IncrementaTempo(){
+				document.getElementById("tempo").innerHTML = tempoSegundos;
+				tempoSegundos++;
+			}
+			
+			setInterval(Ordenar,30000);
+			setInterval(IncrementaTempo,1000);
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" id="campo">
+		<input type="button" value="Add" onclick="IncrementaVetor()">
+		<p id="tempo"></p>
+		<p id="resultado"></p>
+	</body>
+</html>
+
+########################## MOSTRA RETANGULO MOVENDO E É INCREMENTADO O VALOR DE DESLOCAMENTO CONFORME É CLICADO NO INICIAR
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			//objeto que contem a funcao de controle de tempo
+			var armazenaContador = new Array();
+			var contador=0;
+
+			function inicio()
+			{
+				//executa a funcao incrementacontador a cada 1000 milisegundos ou 1 segundo
+				armazenaContador[contador] =setInterval(incrementacontador,1000);
+				contador++;
+				alert(armazenaContador);
+			}
+
+			function fim()
+			{
+				//termina a execucao
+				contador--;
+				clearInterval(armazenaContador[contador]);
+				
+				/*for(i =0; i < contador; i++){
+					clearInterval(armazenaContador[i]);
+				}
+				 Caso fosse desejado parar todas as execucoes ao mesmo tempo;
+				
+				*/ 
+				
+				
+			}
+			
+			function incrementacontador()
+			{
+				//obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.left = Number(objeto.style.left.replace("px","")) + 10;
+			}
+			
+			function inicializa()
+			{
+			    //obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.position = "absolute";
+				objeto.style.width = "100px";
+				objeto.style.height = "100px";
+				objeto.style.top = "200px";
+				objeto.style.left = "10px";
+				objeto.style.backgroundColor = "red";
+			}
+		</script>
+	</head>
+	<body onload="inicializa()">
+		<form name="navegador">
+			<input type="button" onclick="inicio()" value="Iniciar" />
+			<input type="button" onclick="fim()" value="Terminar" />
+		</form>
+		<div id="quadrado"></div>
+	</body>
+</html>
+
+###################################################################################### MOSTRA A GEOLOCALIZAÇÃO
+
+<html>
+	<head>
+
+	</head>
+	<body>
+		<script type="text/javascript">
+			navigator.geolocation.getCurrentPosition(mostraposicao);
+			
+			function mostraposicao(position)
+			{
+				lat = position.coords.latitude;
+				lon = position.coords.longitude;
+				
+				window.location = "https://www.google.com.br/maps?q=" + lat + "," + lon;
+
+			}
+		
+		</script>
+	</body>
+</html>
+
+################################################################################### UTILIZAÇÃO DE COOKIES
+
+<html>
+	<head>
+	<script language="javascript" type="text/javascript">
+	
+		function gravaContador()
+		{
+			var data = new Date;
+			data.setMonth(data.getMonth()+6);
+			
+			var numero = Number(recuperaContador());
+		
+			numero++;
+			
+			var obj = document.getElementById("cont");
+			obj.innerHTML = numero;
+			
+			document.cookie = "contador=" + numero + ";expires=" + data.toGMTString();
+
+		}
+		
+		function recuperaContador()
+		{
+			var contador = document.cookie.split("=")[1];
+			
+			if (contador == "")
+			{
+				contador = "0";
+			}
+			
+			return contador;
+		}
+			
+		</script>
+	</head>
+	<body onload="gravaContador()">
+		<p id="cont"></p>
+	</body>
+</html>
+
+################################################################################### GRAVA O NÚMERO DE ACESSOS A PÁGINA, STORAGE
+
+<html>
+	<head>
+	<script language="javascript" type="text/javascript">
+	
+		function AtualizaContador()
+		{
+			var numContador = localStorage.getItem('contador');
+			
+			numContador = Number(numContador);
+			
+			numContador++;
+			
+			var obj = document.getElementById("cont");
+			obj.innerHTML = numContador;
+			
+			localStorage.setItem('contador',numContador);
+
+		}
+			
+		</script>
+	</head>
+	<body onload="AtualizaContador()">
+		<p id="cont"></p>
+	</body>
+</html>
+
+################################################################################### TESTE DE USO DO MODERNIZER
+
+<html>
+	<head>
+		<script src="modernizr.custom.96446.js" type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			if(Modernizr.canvas == true)
+			{
+				alert("Navegador com suporte a canvas");
+			}
+			else
+			{
+				alert("Sem suporte a canvas");
+			}
+		
+		</script>
+	</body>
+</html>
+
+################################################################################## MOSTRA COORDENADAS DO MOUSE
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			
+			function inicializa()
+			{
+			    //obtem a variavel
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.position = "absolute";
+				objeto.style.width = "100px";
+				objeto.style.height = "100px";
+				objeto.style.top = "200px";
+				objeto.style.left = "10px";
+				
+				
+				//atribui a funcao movimento para o evento de mousemove do document (documento html)
+				document.onmousemove = movimenta;
+				}
+			
+			function movimenta(e)
+			{
+				var objeto = document.getElementById("quadrado");
+				
+				objeto.style.top = e.pageY;
+				objeto.style.left = e.pageX;
+				
+				document.getElementById("para").innerHTML ="X=" + e.pageX + ",Y=" + e.pageY;
+				
+			}
+			
+		</script>
+	</head>
+	<body onload="inicializa()">
+		<p id="para"></p>
+		
+		
+		<div id="quadrado">
+			<img src="xix.png" />
+		</div>
+		
+	</body>
+</html>
+
+################################################################################### CRONÔMETRO
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			var identificador;
+			var hora;
+			var minuto;
+			var segundo;
+			
+			function zerosEsquerda(value, numeroZeros) {
+				var zeros = "0";
+
+				for (var i = 0; i < numeroZeros; i++) 
+				{ 
+					zeros += "0"; 
+				}
+
+				return (zeros + value).slice(numeroZeros * -1);
+			}
+
+			
+			function cronometro()
+			{
+			   var obj = document.getElementById("valor");
+			   
+			   if (segundo < 60)
+			   {
+					segundo++;
+			   }
+			   else
+			   {
+					segundo = 0;
+					if (minuto < 60)
+					{
+						minuto++;
+					}
+					else
+					{
+						hora++;
+						minuto=0;
+					}
+			   }
+			   obj.value = zerosEsquerda(hora,2) + ":" + zerosEsquerda(minuto,2) + ":" + zerosEsquerda(segundo,2);		
+			}
+			
+			function iniciarContagem()
+			{
+				hora = 0;
+				minuto = 0;
+				segundo = 0;
+				identificador = window.setInterval(cronometro,1000);
+			}
+			
+			function pararContagem()
+			{
+				 window.clearInterval(identificador);
+			}
+			
+			
+		</script>	
+	</head>
+	<body>
+		<form name="informacoes">
+			<input type="text" id="valor" value="0" /> 
+			<input type="button" value="Iniciar" onclick="iniciarContagem()" />
+			<input type="button" value="Parar" onclick="pararContagem()" />
+		</form>
+	</body>
+</html>
+
+################################################################################ JOGO DA VELHA
+
+<html>
+	<head>
+		<script language="javascript" type="text/javascript">
+			//incializa um vetor de 3 posicoes
+			var matJogoVelha = new Array(3)
+			//para cada posicao do vetor, cria um novo vetor de 3 posicoes, para criar um matriz 3x3
+			matJogoVelha[0] = [0,0,0]
+			matJogoVelha[1] = [0,0,0]
+			matJogoVelha[2] = [0,0,0]
+			
+			/*Variavel que controla o jogador atual
+			* false = jogador 1
+			* true = jogador 2
+			*/
+			var jogador = false
+			
+			/*Variavel que avalia se o jogo esta concluido*/
+			var jogoVencido = false
+			
+			/*Mensagem para o Jogador que venceu*/
+			var jogoMensagem = "" 
+			
+			/*Este metodo inicia o jogo*/
+			function reinicio()
+			{
+				for(i =0; i < 3 ; i++)
+				{
+					for(j = 0; j < 3; j++)
+					{
+						matJogoVelha[i][j] = 0;
+					}
+				}
+				jogador = false
+				jogoVencido = false
+				jogoMensagem = ""
+				atualizaTela()
+			}
+			
+			/*Este metodo atualiza a tela a partir da matriz
+			* para utilizar este metodo deve-se conhecer o nome dos ID de cada celula da tabela html
+			*/
+			function atualizaTela()
+			{
+				var ids=1
+				
+				for(i =0; i < 3 ; i++)
+				{
+					for(j = 0; j < 3; j++)
+					{
+						//este metodo do document obtem o objeto html atraves do seu id, permitindo alterar atributos do mesmo
+						//neste caso, altera a imagem de cada celula conforme o jogador
+						celula = document.getElementById(ids)
+
+						if (matJogoVelha[i][j] == 0)
+						{
+							celula.innerHTML =  "&nbsp" 
+						}
+						else if (matJogoVelha[i][j] == 1)
+						{
+						    celula.innerHTML = "<img src='bola.png'>"
+						}
+						else if (matJogoVelha[i][j] == 2)
+						{
+						    celula.innerHTML = "<img src='xix.png'>"
+						}
+						
+						ids++
+						
+					}
+				}
+				//atualiza a informacao do jogador atual na tela
+				player = document.getElementById("player")
+				if (!jogador)
+				{
+					player.innerHTML = "Jogador Atual: <b>Jogador 1</b>" 
+				}
+				else
+				{
+					player.innerHTML = "Jogador Atual: <b>Jogador 2</b>" 
+				}
+				
+				//se a partida terminar, indica o gahador
+				ganhador = document.getElementById("vitoria")
+				ganhador.innerHTML = jogoMensagem
+			}
+			
+			function movimenta(x,y)
+			{
+				//somente joga se o jogo ainda nao esta terminado
+				if (!jogoVencido)
+				{
+					//verifica se pode fazer a jogada na peca citada
+					if (matJogoVelha[x][y] == 0)
+					{
+						if (!jogador)
+						{
+							matJogoVelha[x][y] = 1
+						}
+						else
+						{
+							matJogoVelha[x][y] = 2
+						}
+						//inverte o jogador somente se a jogada pode ser realizada
+						jogador = !jogador
+					}
+										
+					//avalia se o jogo esta concluido
+					avaliaVitoria()
+					
+					//apos realizar a jogada, atualiza a tela
+					atualizaTela()
+				}
+			}
+			
+			function avaliaVitoria()
+			{
+				//Se o jogo ainda nao esta concluido, avalia se alguem venceu
+				if (!jogoVencido)
+				{
+					//verifica se alguma linha tem uma jogada
+					for(i =0; i < 3 ; i++)
+					{
+						if (matJogoVelha[i][0] == 1 &&
+						    matJogoVelha[i][1] == 1 &&
+							matJogoVelha[i][2] == 1)
+						{
+							jogoMensagem = "Jogador 1 Venceu"
+							jogoVencido = true;
+							return;
+						}
+						else if(matJogoVelha[i][0] == 2 &&
+								matJogoVelha[i][1] == 2 &&
+								matJogoVelha[i][2] == 2)
+						{
+							jogoMensagem = "Jogador 2 Venceu"
+							jogoVencido = true;
+							return;
+						}
+					}
+					//verifica se alguma coluna tem alguma jogada
+					for(i =0; i < 3 ; i++)
+					{
+						if (matJogoVelha[0][i] == 1 &&
+						    matJogoVelha[1][i] == 1 &&
+							matJogoVelha[2][i] == 1)
+						{
+							jogoMensagem = "Jogador 1 Venceu"
+							jogoVencido = true;
+							return;
+						}
+						else if(matJogoVelha[0][i] == 2 &&
+								matJogoVelha[1][i] == 2 &&
+								matJogoVelha[2][i] == 2)
+						{
+							jogoMensagem = "Jogador 2 Venceu"
+							jogoVencido = true;
+							return;
+						}
+					}
+					
+					//verifica diagonal principal
+					if (matJogoVelha[0][0] == 1 &&
+						matJogoVelha[1][1] == 1 &&
+						matJogoVelha[2][2] == 1)
+					{
+						jogoMensagem = "Jogador 1 Venceu"
+						jogoVencido = true;
+						return;
+					}
+					else if(matJogoVelha[0][0] == 2 &&
+							matJogoVelha[1][1] == 2 &&
+							matJogoVelha[2][2] == 2)
+					{
+						jogoMensagem = "Jogador 2 Venceu"
+						jogoVencido = true;
+						return;
+					}
+					//verifica a outra diagonal
+					if (matJogoVelha[0][2] == 1 &&
+						matJogoVelha[1][1] == 1 &&
+						matJogoVelha[2][0] == 1)
+					{
+						jogoMensagem = "Jogador 1 Venceu"
+						jogoVencido = true;
+						return;
+					}
+					else if(matJogoVelha[0][2] == 2 &&
+							matJogoVelha[1][1] == 2 &&
+							matJogoVelha[2][0] == 2)
+					{
+						jogoMensagem = "Jogador 2 Venceu"
+						jogoVencido = true;
+						return;
+					}
+				}
+			}
+			
+		</script>
+	</head>
+	<body onLoad="reinicio()">
+		<table width="500px"  height="500px" border="1" bordercolor="black"  >
+			<tr height="33%" >
+				<td width="33%" id="1" onClick="movimenta(0,0)">&nbsp</td>
+				<td width="33%" id="2" onClick="movimenta(0,1)">&nbsp</td>
+				<td width="33%" id="3" onClick="movimenta(0,2)">&nbsp</td>
+			</tr>
+			<tr height="33%">
+				<td width="33%" id="4" onClick="movimenta(1,0)">&nbsp</td>
+				<td width="33%" id="5" onClick="movimenta(1,1)">&nbsp</td>
+				<td width="33%" id="6" onClick="movimenta(1,2)">&nbsp</td>
+			</tr>
+			<tr height="33%">
+				<td width="33%" id="7" onClick="movimenta(2,0)">&nbsp</td>
+				<td width="33%" id="8" onClick="movimenta(2,1)">&nbsp</td>
+				<td width="33%" id="9" onClick="movimenta(2,2)">&nbsp</td>
+			</tr>
+		</table>
+		
+		<table>
+			<tr>
+				<td><input type="button" id="b1"  value="Nova Partida" onClick="reinicio()" ></td>
+			</tr>
+			<tr>
+				<td id="player"></td>
+			</tr>
+			<tr>
+				<td id="vitoria"></td>
+			</tr>
+		</table>
+		
+	</body>
+</html>
+
+
+############################################################ CRIA VETOR INSERE OS VALORES COMO ENTRADA E PRINTA NO FINAL
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+			var vetor = new Array();
+			var contadorTamanhoVetor=0;
+			var contador=0;
+						
+			function Configurar()
+			{
+				document.getElementById("cmdSetar").onclick = SetarTamanhoVetor;
+			
+				document.getElementById("cmdCarregar").onclick = CarregarPosicaoVetor;
+			}
+			
+			function SetarTamanhoVetor()
+			{
+				var obj = document.getElementById("tamanhoVetor");
+				
+				contadorTamanhoVetor = Number(obj.value);
+				
+				document.getElementById("posicao").innerHTML = contador;
+			}
+			
+			function CarregarPosicaoVetor()
+			{
+				
+				vetor[contador] = Number(document.getElementById("valorPosicaoVetor").value);
+				contador++;
+				document.getElementById("posicao").innerHTML = contador;
+			
+				if (contador >= contadorTamanhoVetor)
+				{
+					Ordenar();
+				}
+			
+			}
+			
+			function Ordenar()
+			{
+				var retorno="";
+				
+				vetor.sort();
+				
+				for(i = 0; i < vetor.length; i++)
+				{
+					retorno = retorno + vetor[i] + ",";
+				}
+				
+				document.getElementById("vetorOrdenado").innerHTML = retorno;
+			}
+			
+		</script>	
+	</head>
+	<body onload="Configurar()">
+		<form name="informacoes">
+			<input type="text" id="tamanhoVetor" value="0" /> 
+			<input type="button" id="cmdSetar" value="Setar tamanho vetor" />
+			<br>
+			Informe o valor da posicao <span id="posicao"></span>  
+			<input type="text" id="valorPosicaoVetor" value="0" /> 
+			<input type="button" id="cmdCarregar" value="Adicionar Valor" />
+			<br>
+			<span id="vetorOrdenado"></span>
+			
+		</form>
+	</body>
+</html>
+
+#################################################################################### VALIDADOR DE CAMPOS DE ENTRADA
+
+<html>
+	<head>
+		<script type="text/javascript" language="javascript">
+
+			
+			function validaNumero(evt)
+			{  
+				/* 
+					ASCII Código   - 48 a 57 = Teclas 0 a 9 
+					ASCII Código   - 13 = Tecla Enter   
+					ASCII Código   - 08 = Tecla Backspace  
+					keyCode Código - 37 = Seta Esquerda 
+					keyCode Código - 39 = Seta Direita 
+					keyCode Código - 46 = Tecla Delete 
+				*/  
+            var tecla;  
+      
+            if(evt.which)   //firefox 
+            {  
+               tecla = evt.which  
+            }  
+            else if(evt.keyCode) 
+            {  
+               tecla = evt.keyCode;  
+            }  
+
+            if(tecla==13 || tecla == 8 || tecla == 37 || tecla == 39 || tecla == 46 || (tecla >= 48 && tecla <=57)){  
+			  return true;  
+            }  
+            else  
+            {  
+              return false;  
+            }  
+          }  
+		  
+		  
+		  function validaNumeroComTamanho(evt, obj)
+			{  
+				/* 
+					ASCII Código   - 48 a 57 = Teclas 0 a 9 
+					ASCII Código   - 13 = Tecla Enter   
+					ASCII Código   - 08 = Tecla Backspace  
+					keyCode Código - 37 = Seta Esquerda 
+					keyCode Código - 39 = Seta Direita 
+					keyCode Código - 46 = Tecla Delete 
+				*/  
+            var tecla;  
+			
+			//var obj = document.getElementById("campoData");
+      
+            if(evt.which)   //firefox 
+            {  
+               tecla = evt.which  
+            }  
+            else if(evt.keyCode) 
+            {  
+               tecla = evt.keyCode;  
+            }  
+			
+            if(tecla==13 || tecla == 8 || tecla == 37 || tecla == 39 || tecla == 46 || (tecla >= 48 && tecla <=57)){  
+			  if (obj.value.length < 10)
+				return true;  
+			  else
+				return false;
+            }  
+            else  
+            {  
+              return false;  
+            }  
+          } 
+		  
+		  function aceitaData(obj)
+		  {
+			//Este evento é executado quando o controle perde o foco
+			//valida a data atraves do objeto date
+			//o metodo new Date() quando recebe um texto, converte o mesmo para uma data
+			//se o texto nao for uma data, ele sempre retorna a mensagem "Invalid Date", que pode ser comparada 
+			//para validacao
+			if (obj.value != "" )
+			{
+				var d = new Date(obj.value);
+				
+				if (d.toString() == "Invalid Date")
+				{
+					alert("Data Inválida!");
+				}
+			}
+		  }
+		  
+		  function validaData(obj)
+		  {
+				//verifica o tamanho do campo
+				if(obj.value.length == 2 ||
+				   obj.value.length == 5)
+				{
+					obj.value = obj.value + "/";
+				}
+		  }
+			
+
+			
+		</script>
+	</head>
+	<body >
+		Campo Numerico:<input id="campoTexto" type="text" onKeyPress="return validaNumero(event)" />
+		
+		Campo Data:<input id="campoData" type="text" onblur="aceitaData(this)" onKeyPress="return validaNumeroComTamanho(event, this)" onkeyup="validaData(this)" />
+	</body>
+</html>
+
+
+########################################################################################## EVENTO DUPLO CLIQUE JQUERY
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-2.1.1.js"> 
+		</script>
+		
+		<script>
+			$(document).ready( function()
+			{
+
+								 
+				$("#botao").dblclick(function(e)
+							 {
+								alert("Evento de duplo clique!");
+							 }
+							);
+							
+				/*$("#botao").click(function(e)
+				  {
+						alert("Evento de um clique");
+				  }
+				 );*/
+				
+			});
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="button" id="botao" value="clique aqui!"></input>
+	</body>
+</html>
+
+####################################################################################### EXEMPLO1
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-2.1.1.js"> 
+		</script>
+		
+		<script>
+			function executa()
+			{
+				$("#teste").val(5);
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="text" id="teste" ></input>
+		<input type="button" onclick="executa()" value="clique aqui!"></input>
+	</body>
+</html>
+
+###################################################################################### FADE JQUERY
+
+<DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        //conteúdo das listagens
+		$("#minhaDiv").hide();
+		$("#btnTeste").click(function(){           
+			//Sem parâmetros: o efeito é executado em 400ms
+			$("#minhaDiv").fadeIn();
+			//Parâmetro com a duração em ms do efeito
+			$("#minhaDiv").fadeIn(1000);
+			//Parâmetro slow: o efeito é executado em 600ms
+			$("#minhaDiv").fadeIn("slow");
+			//Parâmetro fast: o efeito é executado em 200ms
+			$("#minhaDiv").fadeIn("fast");
+			//Informada duração e função de callback
+			$("#minhaDiv").fadeIn("fast",
+				function(){
+					alert("fade concluido");
+				}
+			);
+		});
+    });
+    </script>
+</head>
+<body>
+    <button id="btnTeste">Clique aqui</button>
+    <div id="minhaDiv" style="height:100px; width:100px; background:green"/>
+<body>
+</html>
+
+#################################################################################### FUNÇÃO ANONIMA JQUERY
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-2.1.1.js"> 
+		</script>
+		
+		<script>
+			$(document).ready( function()
+			{
+				$("#botao").click(function()
+								  {
+										$("#teste").val(5);
+								  }
+								 );
+				
+			});
+		
+		</script>
+		
+	</head>
+	
+	<body>
+		<input type="text" id="teste" ></input>
+		<input type="button" id="botao" value="clique aqui!"></input>
+	</body>
+</html>
+
+################################################################################### MODAL JQUERY
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Dialog - Basic modal</title>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+		<script>
+			$(function() {
+				$( "#dialog-modal" ).dialog({
+				height: 140,
+				modal: true
+				});
+			});
+		</script>
+</head>
+<body>
+	<div id="dialog-modal" title="Basic modal dialog">
+	<p>Adding the modal overlay screen makes the dialog look more prominent because it dims out the page content.</p>
+	</div>
+	<p>Sed vel diam id libero <a href="http://example.com">rutrum convallis</a>. Donec aliquet leo vel magna. Phasellus rhoncus faucibus ante. Etiam bibendum, enim faucibus aliquet rhoncus, arcu felis ultricies neque, sit amet auctor elit eros a lectus.</p>
+</body>
+</html>
+
+################################################################################# SLIDE JQUERY
+
+<DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        //conteúdo das listagens
+		$("#btnTeste").click(function(){           
+			//Sem parâmetros: o efeito é executado em 400ms
+			$("#minhaDiv").slideUp();
+			//Parâmetro com a duração em ms do efeito
+			$("#minhaDiv").slideUp(1000);
+			//Parâmetro slow: o efeito é executado em 600ms
+			$("#minhaDiv").slideUp("slow");
+			//Parâmetro fast: o efeito é executado em 200ms
+			$("#minhaDiv").slideUp("fast");
+			//Informada duração e função de callback
+			$("#minhaDiv").slideUp("fast",
+				function(){
+					alert("Slide concluido");
+				}
+			);
+		});
+    });
+    </script>
+</head>
+<body>
+    <button id="btnTeste">Clique aqui</button>
+    <div id="minhaDiv" style="height:100px; width:100px; background:green"/>
+<body>
+</html>
+
+############################################################################## OI ALERT JQUERY
+
+<!doctype html>
+<html>
+	<head>
+		<script src="jquery-2.1.1.js"></script>
+		<script>
+			function executa()
+			{
+				//var obj = document.getElementById("nome");
+				//obj.value = "juliano";
+				$( '#nome' ).val( "juliano" );
+			}
+			
+			function carrega()
+			{
+				$("#bot").dblclick(function ()
+				{
+					alert("oi");
+				})
+			}
+		</script>
+	</head>
+	<body onload="carrega()">
+		<input type="text" id="nome"></input>
+		<input type="button" id="bot" value="me clique" onclick="executa()"></input>
+	</body>
+</html>
+
+
+
+############################################################################### EXEMPLO 1
+
+<html>
+	<head>
+		<script src="jquery-3.4.1.js"></script>
+		<script>
+			function Processar(){
+				$("#teste").val(5);
+				//document.getElementById("teste").value = 5;
+			}
+		</script>
+	</head>
+	<body>
+		<input type="text" id="teste">
+		<br>
+		<input type="button" onclick="Processar()">
+	</body>
+</html>
+
+############################################################################## EXEMPLO 2
+
+<html>
+	<head>
+		<script src="jquery-3.4.1.js"></script>
+		<script>
+			$(document).ready(
+				function(){
+					$("#teste").val(5);
+					
+					$("#bt1").click(function(e){
+						alert("oi");
+					});
+					
+			});
+			
+		</script>
+	</head>
+	<body>
+		<input type="text" id="teste">
+		<br>
+		<input type="button" id="bt1">
+	</body>
+</html>
+
+############################################################################# EXEMPLO 3
+
+<html>
+	<head>
+		<script src="jquery-3.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#minhaDiv").hide();
+				
+				$("#btnTeste").click(function(){ 
+					$("#minhaDiv").fadeIn(3000);
+				});
+					
+			});
+			
+		</script>
+	</head>
+	<body>
+		<button id="btnTeste">Clique aqui</button>
+		<div id="minhaDiv" style="height:100px; width:100px; background:green"/>
+	</body>
+</html>
+
+############################################################################# 
+
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("#minhaDiv").hide();
+			$("#btnTeste").click(function(){
+				//Sem parâmetros: o efeito é executado em 400ms
+				//$("#minhaDiv").fadeIn();
+				//Parâmetro com a duração em ms do efeito
+				$("#minhaDiv").fadeIn(5000);
+				//Parâmetro slow: o efeito é executado em 600ms
+				//$("#minhaDiv").fadeIn("slow");
+				//Parâmetro fast: o efeito é executado em 200ms
+				//$("#minhaDiv").fadeIn("fast");
+				//Informada duração e função de callback
+				//$("#minhaDiv").fadeIn("slow",
+				//						function(){
+				//							alert("fade concluido");
+				//						});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btnTeste">Clique aqui</button>
+	<div id="minhaDiv" style="height:100px; width:100px; background:green"/>
+<body>
+</html>
+
+#############################################################################
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	
+		<script type="text/javascript">
+			var teste = function(){
+				$("#elemento").val(55);
+			}
+			
+			$(document).ready( function(){
+				
+				$("#btn").click(teste);
+				
+			});
+		
+		</script>
+	
+	</head>
+	<body>
+		<input type="text" id="elemento">
+		<input type="button" id="btn" value="me clique!">
+	</body>
+</html>
+
+###############################################################################
+
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	
+		<script type="text/javascript">
+			function Executa(){
+				//document.getElementById("elemento").value = "5";
+			
+				$("#elemento").val("5");
+			}
+		
+		</script>
+	
+	</head>
+	<body>
+		<input type="text" id="elemento">
+		<input type="button" value="Testar" onclick="Executa()">
+	</body>
+</html>
+
+###############################################################################
+
+<html>
+	<head>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+	
+		<script type="text/javascript">
+			$(document).ready( 
+				function(){
+					$("#elemento").val(5);
+					
+				});
+		
+		</script>
+	
+	</head>
+	<body>
+		<input type="text" id="elemento">
+	</body>
+</html>
